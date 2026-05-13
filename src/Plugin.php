@@ -25,9 +25,9 @@ final class Plugin implements PluginEntryPointInterface
     {
         $forbidden = [];
 
-        if (null !== $config) {
+        if ($config instanceof SimpleXMLElement) {
 
-            if (isset($config['useDoctrinePreset']) && 'true' === (string) $config['useDoctrinePreset']) {
+            if (isset($config->useDoctrinePreset)) {
                 $forbidden = [
                     'Doctrine\ORM\Mapping\Entity',
                     'Doctrine\ORM\Mapping\MappedSuperclass',

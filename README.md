@@ -47,21 +47,24 @@ By default, the plugin requires all classes to be `final` or `abstract` and has 
 
 ### Integration with Doctrine ORM
 
-To enable the built-in preset for Doctrine (`#[Entity]` and `#[MappedSuperclass]`), simply set the `useDoctrinePreset` attribute to `true` in your `psalm.xml`:
+To enable the built-in preset for Doctrine (`#[Entity]` and `#[MappedSuperclass]`), simply add the `<useDoctrinePreset />` tag inside the plugin configuration in your `psalm.xml`:
 
 ```xml
 <plugins>
-    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin" useDoctrinePreset="true" />
+    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+        <useDoctrinePreset />
+    </pluginClass>
 </plugins>
 ```
 
 ### Custom Configurations
 
-You can add any custom proxy or framework attributes (like API Platform or custom annotations) to the exclusion list manually inside the plugin tag:
+You can add any custom proxy or framework attributes (like API Platform or custom annotations) to the exclusion list manually inside the `forbiddenFinalAttributes` section:
 
 ```xml
 <plugins>
-    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin" useDoctrinePreset="true">
+    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+        <useDoctrinePreset />
         <forbiddenFinalAttributes>
             <attribute>App\Attributes\CustomProxy</attribute>
             <attribute>ApiPlatform\Metadata\ApiResource</attribute>
@@ -72,7 +75,7 @@ You can add any custom proxy or framework attributes (like API Platform or custo
 
 ## Errors Handled
 
-* `ClassShouldNotBeFinal` — Triggers when a class is accidentally marked as `final` (prevents production crashes).
+* `ClassShouldNotBeFinal` — Triggers when an entity/proxy class is accidentally marked as `final` (prevents production crashes).
 * `ClassShouldBeFinal` — Triggers when a standard class (service, repository, etc.) misses the `final` keyword.
 
 ## License

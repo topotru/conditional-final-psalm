@@ -30,5 +30,10 @@
         "files": [
             "tests/Fixtures/test-classes.php"
         ]
+    },
+    "extra": {
+        "psalm": {
+            "pluginClass": "Topotru\\ConditionalFinal\\Psalm\\Plugin"
+        }
     }
 }
