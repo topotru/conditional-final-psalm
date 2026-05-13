@@ -32,9 +32,9 @@ final class PluginTest extends TestCase
     public function testDoctrinePresetOption(): void
     {
         $registration = $this->createMock(RegistrationInterface::class);
-        $plugin = new Plugin();
+        $plugin = new Plugin(); // Используем новое имя класса вместо ArchitecturePlugin
 
-        $xml = new SimpleXMLElement('<pluginClass useDoctrinePreset="true" />');
+        $xml = new SimpleXMLElement('<pluginClass><useDoctrinePreset /></pluginClass>');
 
         $plugin($registration, $xml);
 
