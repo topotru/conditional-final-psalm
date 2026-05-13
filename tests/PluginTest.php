@@ -10,6 +10,7 @@ use Psalm\Plugin\RegistrationInterface;
 use SimpleXMLElement;
 use Topotru\ConditionalFinal\Psalm\Handler;
 use Topotru\ConditionalFinal\Psalm\Plugin;
+use Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired;
 
 final class PluginTest extends TestCase
 {
@@ -32,7 +33,7 @@ final class PluginTest extends TestCase
     public function testDoctrinePresetOption(): void
     {
         $registration = $this->createMock(RegistrationInterface::class);
-        $plugin = new Plugin(); // Используем новое имя класса вместо ArchitecturePlugin
+        $plugin = new Plugin();
 
         $xml = new SimpleXMLElement('<pluginClass><useDoctrinePreset /></pluginClass>');
 
@@ -58,7 +59,7 @@ final class PluginTest extends TestCase
         $plugin($registration, $xml);
 
         $this->assertContains(
-            'Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired',
+            CustomProxyRequired::class,
             Handler::$forbiddenAttributes
         );
     }
