@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<psalm errorLevel="1" resolveFromConfigFile="true">
+    <projectFiles>
+        <file name="test-classes.php"/>
+    </projectFiles>
+
+    <plugins>
+        <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+            <forbiddenFinalAttributes>
+                <attribute>Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired</attribute>
+                <attribute>Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomAnotherForbidden</attribute>
+            </forbiddenFinalAttributes>
+        </pluginClass>
+    </plugins>
+
+    <issueHandlers>
+        <UnusedClass errorLevel="info" />
+        <ClassMustBeFinal errorLevel="info" />
+        <PossiblyUnusedProperty errorLevel="info" />
+    </issueHandlers>
+</psalm>
