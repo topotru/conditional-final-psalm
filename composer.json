@@ -1,5 +1,5 @@
 {
-    "name": "topotru/conditional-final-psalm",
+    "name": "topotru/psalm-conditional-final",
     "description": "Smart final/abstract class enforcement with attributes-based exclusions for Psalm. Perfect for Doctrine entities.",
     "keywords": [
         "psalm",

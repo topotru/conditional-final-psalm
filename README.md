@@ -32,13 +32,13 @@ class User {} // Annoying and error-prone!
 ## Installation
 
 ```bash
-composer require --dev topotru/conditional-final-psalm
+composer require --dev topotru/psalm-conditional-final
 ```
 
 Enable the plugin in your `psalm.xml`:
 
 ```bash
-vendor/bin/psalm-plugin enable topotru/conditional-final-psalm
+vendor/bin/psalm-plugin enable topotru/psalm-conditional-final
 ```
 
 ## Configuration
