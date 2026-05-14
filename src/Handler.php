@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Topotru\ConditionalFinal\Psalm;
+namespace Topotru\Psalm\ConditionalFinal;
 
 use Override;
 use Psalm\CodeLocation;
@@ -11,8 +11,8 @@ use Psalm\Plugin\EventHandler\AfterClassLikeAnalysisInterface;
 use Psalm\Plugin\EventHandler\Event\AfterClassLikeAnalysisEvent;
 use Psalm\Storage\AttributeStorage;
 use Psalm\Storage\ClassLikeStorage;
-use Topotru\ConditionalFinal\Psalm\Issue\ClassShouldBeFinal;
-use Topotru\ConditionalFinal\Psalm\Issue\ClassShouldNotBeFinal;
+use Topotru\Psalm\ConditionalFinal\Issue\ClassShouldBeFinal;
+use Topotru\Psalm\ConditionalFinal\Issue\ClassShouldNotBeFinal;
 
 use function ltrim;
 use function str_contains;

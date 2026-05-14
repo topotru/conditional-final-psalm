@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Topotru\ConditionalFinal\Psalm\Tests\Fixtures;
+namespace Topotru\Psalm\ConditionalFinal\Tests\Fixtures;
 
 use Attribute;
 

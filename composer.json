@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Topotru\\ConditionalFinal\\Psalm\\": "src/"
+            "Topotru\\Psalm\\ConditionalFinal\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Topotru\\ConditionalFinal\\Psalm\\Tests\\": "tests/"
+            "Topotru\\Psalm\\ConditionalFinal\\Tests\\": "tests/"
         },
         "files": [
             "tests/Fixtures/test-classes.php"
@@ -33,7 +33,7 @@
     },
     "extra": {
         "psalm": {
-            "pluginClass": "Topotru\\ConditionalFinal\\Psalm\\Plugin"
+            "pluginClass": "Topotru\\Psalm\\ConditionalFinal\\Plugin"
         }
     }
 }

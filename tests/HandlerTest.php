@@ -1,6 +1,6 @@
 <?php
 
-namespace Topotru\ConditionalFinal\Psalm\Tests;
+namespace Topotru\Psalm\ConditionalFinal\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Override;

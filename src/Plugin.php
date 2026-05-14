@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Topotru\ConditionalFinal\Psalm;
+namespace Topotru\Psalm\ConditionalFinal;
 
 use Override;
 use Psalm\Plugin\PluginEntryPointInterface;

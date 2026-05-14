@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Topotru\ConditionalFinal\Psalm\Tests;
+namespace Topotru\Psalm\ConditionalFinal\Tests;
 
 use Override;
 use PHPUnit\Framework\TestCase;
 use Psalm\Plugin\RegistrationInterface;
 use SimpleXMLElement;
-use Topotru\ConditionalFinal\Psalm\Handler;
-use Topotru\ConditionalFinal\Psalm\Plugin;
-use Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired;
+use Topotru\Psalm\ConditionalFinal\Handler;
+use Topotru\Psalm\ConditionalFinal\Plugin;
+use Topotru\Psalm\ConditionalFinal\Tests\Fixtures\CustomProxyRequired;
 
 final class PluginTest extends TestCase
 {
@@ -51,7 +51,7 @@ final class PluginTest extends TestCase
         $xml = new SimpleXMLElement('
             <pluginClass>
                 <forbiddenFinalAttributes>
-                    <attribute>Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired</attribute>
+                    <attribute>Topotru\Psalm\ConditionalFinal\Tests\Fixtures\CustomProxyRequired</attribute>
                 </forbiddenFinalAttributes>
             </pluginClass>
         ');

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Topotru\ConditionalFinal\Psalm\Issue;
+namespace Topotru\Psalm\ConditionalFinal\Issue;
 
 use Psalm\CodeLocation;
 use Psalm\Issue\CodeIssue;

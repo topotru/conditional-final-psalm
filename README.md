@@ -51,7 +51,7 @@ To enable the built-in preset for Doctrine (`#[Entity]` and `#[MappedSuperclass]
 
 ```xml
 <plugins>
-    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+    <pluginClass class="Topotru\Psalm\ConditionalFinal\Plugin">
         <useDoctrinePreset />
     </pluginClass>
 </plugins>
@@ -63,7 +63,7 @@ You can add any custom proxy or framework attributes (like API Platform or custo
 
 ```xml
 <plugins>
-    <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+    <pluginClass class="Topotru\Psalm\ConditionalFinal\Plugin">
         <useDoctrinePreset />
         <forbiddenFinalAttributes>
             <attribute>App\Attributes\CustomProxy</attribute>

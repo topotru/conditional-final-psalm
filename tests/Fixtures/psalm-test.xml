@@ -5,10 +5,10 @@
     </projectFiles>
 
     <plugins>
-        <pluginClass class="Topotru\ConditionalFinal\Psalm\Plugin">
+        <pluginClass class="Topotru\Psalm\ConditionalFinal\Plugin">
             <forbiddenFinalAttributes>
-                <attribute>Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomProxyRequired</attribute>
-                <attribute>Topotru\ConditionalFinal\Psalm\Tests\Fixtures\CustomAnotherForbidden</attribute>
+                <attribute>Topotru\Psalm\ConditionalFinal\Tests\Fixtures\CustomProxyRequired</attribute>
+                <attribute>Topotru\Psalm\ConditionalFinal\Tests\Fixtures\CustomAnotherForbidden</attribute>
             </forbiddenFinalAttributes>
         </pluginClass>
     </plugins>
